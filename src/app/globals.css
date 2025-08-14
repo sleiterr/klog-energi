@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@import "./style/color-section.css";
+@import "./style/fonts.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
