@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root {
+  --heading-text: #e4eadc;
+  --color-text: #e4eadc;
+  --debate-text: #1d3f33;
+  --featured-text: #323232;
+}

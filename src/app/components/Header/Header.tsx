@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="absolute w-full bg-transparent top-[40px] right-[40px] z-10 after:content-[''] after:w-[40%] after:h-[1px] after:inline-block after:align-middle after:bg-white">
+    <header className="w-full bg-transparent top-[40px] right-[80px] absolute z-10 after:content-[''] after:w-[600px] after:h-[1px] after:inline-block after:align-middle after:bg-[#E4EADC] after:absolute after:left-1/2 after:-translate-x-1/2">
       <nav className="flex justify-center items-center h-[60px]">
         <ul className="flex justify-center items-center gap-8 list-none">
           <li className=" font-normal text-lg text-white">
