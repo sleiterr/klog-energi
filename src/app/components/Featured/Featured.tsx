@@ -15,87 +15,97 @@ import {
 
 const Featured = () => {
   return (
-    <section>
-      <div className="">
-        <h2>I Nordvestjylland har vi</h2>
-        <div className="grid grid-cols-2">
-          <ul>
-            <li className="">
+    <section className="bg-debate-gradient mx-4 rounded-2xl">
+      <div className="py-[120px] mx-auto px-50 max-w-5x1">
+        <h2 className="font-semibold text-6xl text-debate pb-[42px]">
+          I Nordvestjylland har vi
+        </h2>
+        <div className="grid grid-cols-[530px_2fr] gap-4">
+          <ul className="flex flex-col items-start justify-start gap-4">
+            <li className="flex items-start justify-start gap-4">
               <Image
                 src={Lokation}
                 alt="Lokation Icon"
-                width={50}
-                height={50}
+                width={24}
+                height={24}
               />
-              <p>
+              <p className="font-light text-featured text-lg">
                 Arealer til sol, vind, Power-to-X og ilandføringer fra Nordsøen
               </p>
             </li>
-            <li>
-              <Image src={Tool} alt="Tool Icon" width={50} height={50} />
-              <p>
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Tool} alt="Tool Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
                 Servicehavne til vindparker i Nordsøen, Thorsminde og Thyborøn
               </p>
             </li>
-            <li>
-              <Image src={Vind} alt="Vind Icon" width={50} height={50} />
-              <p>Nærhed til grøn strøm fra Nordsøen</p>
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Vind} alt="Vind Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
+                Nærhed til grøn strøm fra Nordsøen
+              </p>
             </li>
-            <li>
-              <Image src={Purpose} alt="Purpose Icon" width={50} height={50} />
-              <p>
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Purpose} alt="Purpose Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
                 Effektiv planlægning på tværs af sektorer og i samspil med
                 projektudviklere og borgere
               </p>
             </li>
-            <li>
+            <li className="flex items-start justify-start gap-4">
               <Image
                 src={Examination}
                 alt="Examination Icon"
-                width={50}
-                height={50}
+                width={24}
+                height={24}
               />
-              <p>Et afgørende bidrag til et forbedret grønt BNP</p>
+              <p className="font-light text-featured text-lg">
+                Et afgørende bidrag til et forbedret grønt BNP
+              </p>
             </li>
           </ul>
 
-          <ul>
-            <li>
-              <Image src={Liste} alt="Liste Icon" width={50} height={50} />
-              <p>Nærhed til produktion af grønt CO2 fra biogasanlæg</p>
+          <ul className="flex flex-col itemsstart justify-start gap-4 w-132">
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Liste} alt="Liste Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
+                Nærhed til produktion af grønt CO2 fra biogasanlæg
+              </p>
             </li>
-            <li>
-              <Image src={Skole} alt="Skole Icon" width={50} height={50} />
-              <p>
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Skole} alt="Skole Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
                 Uddannelsesinstitutioner, der ønsker at udvikle fremtidens
                 Power-to-X kompetencer
               </p>
             </li>
-            <li>
+            <li className="flex items-start justify-start gap-4">
               <Image
                 src={Elektricitet}
                 alt="Elektricitet Icon"
-                width={50}
-                height={50}
+                width={24}
+                height={24}
               />
-              <p>Forstærket el-transmissionsnet mellem Idomlund og Endrup</p>
+              <p className="font-light text-featured text-lg">
+                Forstærket el-transmissionsnet mellem Idomlund og Endrup
+              </p>
             </li>
-            <li>
-              <Image src={Skib} alt="Skib Icon" width={50} height={50} />
-              <p>
+            <li className="flex items-start justify-start gap-4">
+              <Image src={Skib} alt="Skib Icon" width={24} height={24} />
+              <p className="font-light text-featured text-lg">
                 Udskibningshavn til vindprojekter i Nordsøen og udskibning af
                 fremtidens brændstoffer i Thyborøn
               </p>
             </li>
 
-            <li>
+            <li className="flex items-start justify-start gap-4">
               <Image
                 src={Godkendt}
                 alt="Godkendt Icon"
-                width={50}
-                height={50}
+                width={24}
+                height={24}
               />
-              <p>
+              <p className="font-light text-featured text-lg">
                 Fremtidens kompetencer til Power-to-X: Håndværkere, leverandører
                 til vindindustrien og kemisk virksomhed, kompetencer fra kemisk
                 virksomhed, mv.

@@ -3,12 +3,7 @@
 
 @import "./style/color-section.css";
 @import "./style/fonts.css";
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@import "./style/text-color.css";
 
 :root {
   --font-poppins: "Poppins", sans-serif;
@@ -16,4 +11,20 @@
 
 body {
   font-family: var(--font-poppins);
+}
+
+.text-heading-primary {
+  color: var(--heading-text);
+}
+
+.text-content {
+  color: var(--color-text);
+}
+
+.text-debate {
+  color: var(--debate-text);
+}
+
+.text-featured {
+  color: var(--featured-text);
 }
