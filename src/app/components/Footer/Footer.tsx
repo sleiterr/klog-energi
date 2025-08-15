@@ -5,47 +5,35 @@ import Lemving from "../../../../public/footer-assets/Lemving.png";
 import Struer from "../../../../public/footer-assets/Struer.png";
 const Footer = () => {
   return (
-    <div className="w-full h-[100px] bg-gray-800 text-white flex flex-col justify-center items-center">
-      <div className="flex items-center justify-center">
-        <ul>
+    <div className="bg-debate-gradient pt-18 px-[140px]">
+      <div className="flex items-centers justify-between">
+        <ul className="flex flex-col justify-between h-full">
           <li>
-            <Image src={Struer} alt="" width={480} height={60} />
+            <Image src={Struer} alt="" width={400} height={60} />
           </li>
-          <li>
+          <li className="self-start">
             <p>Struer Kommune</p>
-          </li>
-          <li>
             <p>Østergade 13-15</p>
-          </li>
-          <li>
             <p>7600 Struer</p>
           </li>
         </ul>
-        <ul>
+        <ul className="flex flex-col items-start justify-between">
           <li>
-            <Image src={Holstebro} alt="" width={480} height={60} />
+            <Image src={Holstebro} alt="" width={400} height={60} />
           </li>
-          <li>
+          <li className="self-start">
             <p>Holstebro Kommune</p>
-          </li>
-          <li>
             <p>Kirkestræde 11-15</p>
-          </li>
-          <li>
             <p>7500 Holstebro</p>
           </li>
         </ul>
-        <ul>
+        <ul className="flex flex-col items-start justify-between">
           <li>
-            <Image src={Lemving} alt="" width={480} height={60} />
+            <Image src={Lemving} alt="" width={400} height={60} />
           </li>
-          <li>
+          <li className="self-start">
             <p>Lemvig Kommune</p>
-          </li>
-          <li>
             <p>Rådhusgade 2</p>
-          </li>
-          <li>
             <p>7620 Lemvig</p>
           </li>
         </ul>
