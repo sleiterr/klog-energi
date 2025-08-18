@@ -28,3 +28,7 @@ body {
 .text-featured {
   color: var(--featured-text);
 }
+
+.text-footer {
+  color: var(--footer-text);
+}
