@@ -5,7 +5,7 @@ import Lemving from "../../../../public/footer-assets/Lemving.png";
 import Struer from "../../../../public/footer-assets/Struer.png";
 const Footer = () => {
   return (
-    <div className="bg-debate-gradient pt-18 pb-4 px-[140px]">
+    <footer className="bg-debate-gradient pt-18 pb-4 px-[140px]">
       <div className="flex items-centers justify-between">
         <ul className="flex flex-col justify-between">
           <li>
@@ -55,7 +55,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 
