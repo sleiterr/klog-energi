@@ -5,20 +5,25 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="h-screen relative place-content-center overflow-hidden">
-      {" "}
       <div className="pt-4 pl-4">
-        {" "}
         <div className=" relative inline-block">
-          {" "}
           <Image
             src={heroBg}
             alt="Klog Energi"
-            className="rounded-lg"
+            className="rounded-lg clip-path-left"
             style={{ objectFit: "cover" }}
-          />{" "}
-          <div className="absolute inset-0 bg-green-800/60 rounded-lg"></div>{" "}
-        </div>{" "}
-      </div>{" "}
+          />
+          <div className="absolute inset-0 bg-green/50 rounded-lg"></div>
+          <Image
+            src="/hero-gif/hero-title.gif"
+            alt="Hero animation"
+            width={800}
+            height={300}
+            className="absolute top-1/2 left-2/3 -translate-x-1/2 -translate-y-1/2 w-full h-40"
+            priority
+          />
+        </div>
+      </div>
     </section>
   );
 };

@@ -4,13 +4,13 @@ const EnergyInfo = () => {
   return (
     <section>
       <div className="py-[120px] mx-auto px-50 max-w-5x1">
-        <h2 className="font-semibold text-6xl text-heading-primary leading-[90px]">
+        <h2 className="font-semibold text-6xl text-primary leading-[90px]">
           Klog Energi er grøn omstilling på nordvestjysk
         </h2>
         <div className="grid grid-cols-[2fr_580px] items-start gap-4">
           <ul className="flex flex-col items-start gap-4">
             <li>
-              <p className="font-light text-lg text-content leading-[27px]">
+              <p className="font-light text-lg text-primary leading-[27px]">
                 Nordvestjylland har siden 90’erne drevet udbygningen af grøn
                 energi i Danmark. Med teknologi, viden og ressourcer har
                 Danmarks centrum for klog og ren energi bidraget væsentligt til
@@ -18,7 +18,7 @@ const EnergyInfo = () => {
               </p>
             </li>
             <li>
-              <p className="font-light text-lg text-content leading-[27px]">
+              <p className="font-light text-lg text-primary leading-[27px]">
                 Det nordvestjyske samarbejde Klog Energi består af Lemvig,
                 Struer og Holstebro Kommune og er en af forudsætningerne for, at
                 ikke blot Danmark, men hele Europa kan indfri ambitionerne for
@@ -26,7 +26,7 @@ const EnergyInfo = () => {
               </p>
             </li>
             <li>
-              <p className="font-light text-lg text-content leading-[27px]">
+              <p className="font-light text-lg text-primary leading-[27px]">
                 Landsdelen er et centrum for vedvarende energi og en vigtig hub
                 for produktion, transformation og distribution af grøn energi.
                 Nationale og internationale aktører er allerede ved at etablere
@@ -38,7 +38,7 @@ const EnergyInfo = () => {
           </ul>
           <ul className="flex flex-col items-start justify-start gap-4">
             <li>
-              <p className="font-light text-lg text-content leading-[27px]">
+              <p className="font-light text-lg text-primary leading-[27px]">
                 For intet er umuligt i mulighedernes Nordvestjylland. Klog
                 Energi er vedvarende og grøn. Det er erfaring i at arbejde
                 sammen med lokalbefolkningen. Det er motivation for at sætte den
@@ -48,7 +48,7 @@ const EnergyInfo = () => {
               </p>
             </li>
             <li>
-              <p className="font-light text-lg text-content leading-[27px]">
+              <p className="font-light text-lg text-primary leading-[27px]">
                 Nordvestjylland har fremtidens kompetencer inden for Power-to-X
                 og vil med de rette partnerskaber uddanne fremtidens VE- og
                 PtX-talenter til gavn for hele landet. Det er Klog Energi – og

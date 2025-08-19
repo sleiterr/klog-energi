@@ -18,15 +18,15 @@ const Profile = () => {
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-start mb-4">
-              <h2 className="font-semibold text-6xl text-heading-primary leading-[90px] w-lg">
+              <h2 className="font-semibold text-6xl text-primary leading-[90px] w-lg">
                 Brian Vad Mathiesen
               </h2>
-              <p className="font-semibold text-content text-xs">
+              <p className="font-semibold text-primary text-xs">
                 Debattens keynote speaker
               </p>
             </div>
             <div className="">
-              <p className="font-light text-content text-lg w-[530px]">
+              <p className="font-light text-primary text-lg w-[530px]">
                 Lorem ipsum dolor sit amet consectetur. At adipiscing id duis
                 sed libero commodo suspendisse. Convallis tincidunt adipiscing
                 integer venenatis egestas at in. Morbi adipiscing sed est nec
