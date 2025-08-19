@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Debate = () => {
   return (
-    <section className="bg-debate-gradient mx-4 rounded-2xl">
+    <section className="bg-debate mx-4 rounded-2xl">
       <div className="py-[120px] mx-auto px-50 max-w-5x1">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-10">
-            <h2 className="font-semibold text-6xl text-debate pb-[42px]">
+            <h2 className="font-semibold text-6xl text-debaten pb-[42px]">
               Program for debatten
             </h2>
             <ul
@@ -18,19 +18,19 @@ const Debate = () => {
                after:bg-[#1D3F33]"
             >
               <li>
-                <span className="font-semibold text-xs text-debate">
+                <span className="font-semibold text-xs text-debaten">
                   Sport 1
                 </span>
-                <p className="font-semibold text-xl text-debate">
+                <p className="font-semibold text-xl text-debaten">
                   Fundamentet for den kloge energi er på plads. Hvordan udnytter
                   Danmark Nordvestjyllands potentialer for klog og grøn energi?
                 </p>
               </li>
               <li>
-                <span className="font-semibold text-xs text-debate">
+                <span className="font-semibold text-xs text-debaten">
                   Sport 2
                 </span>
-                <p className="font-semibold text-xl text-debate">
+                <p className="font-semibold text-xl text-debaten">
                   Hvordan løser vi konkrete udfordringer og sætter turbo på hele
                   Danmarks grønne omstilling?
                 </p>
@@ -46,10 +46,10 @@ const Debate = () => {
                   height={80}
                 />
                 <div className="">
-                  <h4 className="font-semibold text-debate text-xl">
+                  <h4 className="font-semibold text-debaten text-xl">
                     Keynote speaker
                   </h4>
-                  <p className="font-light text-debate text-lg">
+                  <p className="font-light text-debaten text-lg">
                     Brian Vad Mathiesen, Titel
                   </p>
                 </div>
@@ -62,10 +62,10 @@ const Debate = () => {
                   height={80}
                 />
                 <div className="">
-                  <h4 className="font-semibold text-debate text-xl">
+                  <h4 className="font-semibold text-debaten text-xl">
                     Moderator
                   </h4>
-                  <p className="font-light text-debate text-lg">
+                  <p className="font-light text-debaten text-lg">
                     Connie Hedegaard, Titel
                   </p>
                 </div>
@@ -78,8 +78,8 @@ const Debate = () => {
                   height={80}
                 />
                 <div className="">
-                  <h4 className="font-semibold text-debate text-xl">Vært</h4>
-                  <p className="font-light text-debate text-lg">
+                  <h4 className="font-semibold text-debaten text-xl">Vært</h4>
+                  <p className="font-light text-debaten text-lg">
                     Thomas Danielsen, Titel
                   </p>
                 </div>

@@ -11,15 +11,14 @@ type Props = {
 const BannerCover = ({ preloadImage }: Props) => {
   return (
     <section className="w-full h-screen relative overflow-hidden">
-      <div className="py-[120px] mx-auto px-50 max-w-5x1">
-        <Img
-          src={Banner}
-          alt=""
-          fill={true}
-          objectFit="contain"
-          priority={preloadImage}
-        />
-      </div>
+      {/* <div className="relative z-10 max-w-5xl mx-auto px-4 py-[120px]"></div> */}
+      <Img
+        src={Banner}
+        alt=""
+        fill
+        className="object-cover rounded-lg"
+        priority={preloadImage}
+      />
     </section>
   );
 };
