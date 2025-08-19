@@ -1,22 +1,26 @@
 import React from "react";
 import Image from "next/image";
 import BrianImage from "../../../../public/images/Brian-Vad.png"; // Adjust the path as necessary
+import Layer from "../../../../public/icons/Layer_1.png";
 
 const Profile = () => {
   return (
     <section>
       <div className="py-[120px] px-4 mx-auto max-w-5x1 flex items-center justify-center gap-4">
         <div className="grid grid-cols-2 gap-4">
-          <div className="flex justify-center items-center">
+          <Image
+            src={BrianImage}
+            alt="Profile"
+            width={936}
+            height={800}
+            className="rounded-2xl clip-path-left object-cover"
+          />
+          <div className="relative flex flex-col items-center justify-center">
             <Image
-              src={BrianImage}
-              alt="Profile"
-              width={936}
-              height={800}
-              className="rounded-2xl clip-path-left object-cover"
+              src={Layer}
+              alt="icon"
+              className="absolute translate-x-1/2 top-15 right-32"
             />
-          </div>
-          <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-start mb-4">
               <h2 className="font-semibold text-6xl text-primary leading-[90px] w-lg">
                 Brian Vad Mathiesen

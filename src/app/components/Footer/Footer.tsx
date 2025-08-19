@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Holstebro from "../../../../public/footer-assets/Holstebro.png";
 import Lemving from "../../../../public/footer-assets/Lemving.png";
@@ -46,17 +47,27 @@ const Footer = () => {
         <div className="flex items-center justify-center pt-18 w-full">
           <ul className="flex items-center justify-between text-white w-full">
             <li className="">
-              <p className="font-light text-xs text-footer">
+              <p className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300">
                 © 2023 Klog Energi - Alle rettigheder forbeholdt.
               </p>
             </li>
             <li className="">
-              <p className="font-light text-xs text-footer">Cookiepolitik</p>
+              <Link
+                href="#"
+                className="font-light text-xs pr-40 text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300"
+              >
+                Cookiepolitik
+              </Link>
             </li>
             <li>
-              <p className="font-light text-xs text-footer">
+              <Link
+                href="#"
+                className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Website by Superego
-              </p>
+              </Link>
             </li>
           </ul>
         </div>

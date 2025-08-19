@@ -7,14 +7,17 @@ const Header = () => {
       <nav className="flex justify-center items-center h-[60px]">
         <ul className="flex justify-center items-center gap-8 list-none">
           <li className=" font-normal text-lg">
-            <Link href="#" className="no-underline text-primary">
+            <Link
+              href="#"
+              className="no-underline text-primary hover:text-hover transition-colors duration-300"
+            >
               Om Debatten
             </Link>
           </li>
           <li>
             <Link
               href="#"
-              className="no-underline font-normal text-lg text-primary"
+              className="no-underline font-normal text-lg text-primary hover:text-hover transition-colors duration-300"
             >
               Program
             </Link>
@@ -22,7 +25,7 @@ const Header = () => {
           <li>
             <Link
               href="#"
-              className="no-underline font-normal text-lg text-primary"
+              className="no-underline font-normal text-lg text-primary hover:text-hover transition-colors duration-300"
             >
               Vores tilbud
             </Link>
@@ -30,7 +33,7 @@ const Header = () => {
           <li>
             <Link
               href="#"
-              className="no-underline font-normal text-lg text-primary"
+              className="no-underline font-normal text-lg text-primary hover:text-hover transition-colors duration-300"
             >
               Den grønne omstilling
             </Link>
