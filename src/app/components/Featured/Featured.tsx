@@ -15,7 +15,7 @@ import {
 
 const Featured = () => {
   return (
-    <section className="bg-debate mx-4 rounded-2xl mb-[120px]">
+    <section className="bg-debate mx-4 rounded-2xl">
       <div className="py-[120px] mx-auto px-50 max-w-5x1">
         <h2 className="font-semibold text-6xl text-debaten pb-[42px]">
           I Nordvestjylland har vi
