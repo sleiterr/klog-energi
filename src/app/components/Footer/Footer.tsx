@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <footer className="bg-footer-body pt-18 pb-4 px-[140px]">
       <div className="flex flex-col items-center justify-center">
-        <div className="flex items-centers justify-between">
+        <div className="flex items-centers justify-between w-full">
           <ul className="flex flex-col justify-between">
             <li>
-              <Image src={Struer} alt="" width={400} height={60} />
+              <Image src={Struer} alt="struer" width={400} height={60} />
             </li>
             <li className="self-start pt-8">
               <p className="font-medium text-lg text-footer">Struer Kommune</p>
@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col items-start justify-between">
             <li className="">
-              <Image src={Holstebro} alt="" width={274} height={100} />
+              <Image src={Holstebro} alt="Holstebro" width={274} height={100} />
             </li>
             <li className="self-center text-center pt-8">
               <p className="font-medium text-lg text-footer">
@@ -34,7 +34,7 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col items-start justify-between">
             <li>
-              <Image src={Lemving} alt="" width={400} height={60} />
+              <Image src={Lemving} alt="Lemving" width={400} height={60} />
             </li>
             <li className="self-end text-end pt-8">
               <p className="font-medium text-lg text-footer">Lemvig Kommune</p>
@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-center pt-18">
+        <div className="flex items-center justify-center pt-18 w-full">
           <ul className="flex items-center justify-between text-white w-full">
             <li className="">
               <p className="font-light text-xs text-footer">

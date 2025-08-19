@@ -24,26 +24,6 @@ body {
   font-family: var(--font-poppins);
 }
 
-/* .text-heading-primary {
-  color: var(--heading-text);
-} */
-
-/* .text-content {
-  color: var(--color-text);
-}
-
-.text-debate {
-  color: var(--debate-text);
-}
-
-.text-featured {
-  color: var(--featured-text);
-}
-
-.text-footer {
-  color: var(--footer-text);
-} */
-
 .clip-path-left {
   -webkit-clip-path: polygon(
     92.367% 89.427%,
@@ -76,6 +56,7 @@ body {
     92.694% 91.717%,
     92.367% 89.427%
   );
+
   clip-path: polygon(
     92.367% 89.427%,
     90.732% 73.794%,
