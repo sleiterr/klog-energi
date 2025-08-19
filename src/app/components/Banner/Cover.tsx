@@ -3,8 +3,6 @@ import Img from "next/image";
 import Banner from "../../../../public/images/klog-energi.jpg"; // Adjust the path as necessary
 
 type Props = {
-  title: string;
-  src: string;
   preloadImage?: boolean;
 };
 

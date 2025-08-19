@@ -11,7 +11,7 @@ const Hero = () => {
           alt="Klog Energi"
           className="rounded-lg clip-path-left"
           style={{ objectFit: "cover" }}
-          width={980}
+          width={1160}
           height={700}
           quality={100}
         />
