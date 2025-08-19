@@ -22,95 +22,80 @@ const Featured = () => {
         </h2>
         <div className="grid grid-cols-[530px_2fr] gap-4">
           <ul className="flex flex-col items-start justify-start gap-4">
-            <li className="flex items-start justify-start gap-4">
-              <Image
-                src={Lokation}
-                alt="Lokation Icon"
-                width={24}
-                height={24}
-              />
-              <p className="font-light text-featured text-lg">
-                Arealer til sol, vind, Power-to-X og ilandføringer fra Nordsøen
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Tool} alt="Tool Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Servicehavne til vindparker i Nordsøen, Thorsminde og Thyborøn
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Vind} alt="Vind Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Nærhed til grøn strøm fra Nordsøen
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Purpose} alt="Purpose Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Effektiv planlægning på tværs af sektorer og i samspil med
-                projektudviklere og borgere
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image
-                src={Examination}
-                alt="Examination Icon"
-                width={24}
-                height={24}
-              />
-              <p className="font-light text-featured text-lg">
-                Et afgørende bidrag til et forbedret grønt BNP
-              </p>
-            </li>
+            <FeaturedItem
+              src={Lokation}
+              alt="Lokation Icon"
+              text="Arealer til sol, vind, Power-to-X og ilandføringer fra Nordsøen"
+            />
+            <FeaturedItem
+              src={Tool}
+              alt="Tool Icon"
+              text="Servicehavne til vindparker i Nordsøen, Thorsminde og Thyborøn"
+            />
+            <FeaturedItem
+              src={Vind}
+              alt="Vind Icon"
+              text="
+              Nærhed til grøn strøm fra Nordsøen
+              "
+            />
+            <FeaturedItem
+              src={Purpose}
+              alt="Purpose Icon"
+              text="
+              Effektiv planlægning på tværs af sektorer og i samspil med
+              projektudviklere og borgere
+              "
+            />
+            <FeaturedItem
+              src={Examination}
+              alt="Examination Icon"
+              text="
+              Et afgørende bidrag til et forbedret grønt BNP
+              "
+            />
           </ul>
 
           <ul className="flex flex-col itemsstart justify-start gap-4 w-132">
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Liste} alt="Liste Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Nærhed til produktion af grønt CO2 fra biogasanlæg
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Skole} alt="Skole Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Uddannelsesinstitutioner, der ønsker at udvikle fremtidens
+            <FeaturedItem
+              src={Liste}
+              alt="Liste Icon"
+              text="
+              Nærhed til produktion af grønt CO2 fra biogasanlæg
+              "
+            />
+            <FeaturedItem
+              src={Skole}
+              alt="Skole Icon"
+              text="
+              Uddannelsesinstitutioner, der ønsker at udvikle fremtidens
                 Power-to-X kompetencer
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image
-                src={Elektricitet}
-                alt="Elektricitet Icon"
-                width={24}
-                height={24}
-              />
-              <p className="font-light text-featured text-lg">
-                Forstærket el-transmissionsnet mellem Idomlund og Endrup
-              </p>
-            </li>
-            <li className="flex items-start justify-start gap-4">
-              <Image src={Skib} alt="Skib Icon" width={24} height={24} />
-              <p className="font-light text-featured text-lg">
-                Udskibningshavn til vindprojekter i Nordsøen og udskibning af
+              "
+            />
+            <FeaturedItem
+              src={Elektricitet}
+              alt="Elektricitet Icon"
+              text="
+              Forstærket el-transmissionsnet mellem Idomlund og Endrup
+              "
+            />
+            <FeaturedItem
+              src={Skib}
+              alt="Skib Icon"
+              text="
+              Udskibningshavn til vindprojekter i Nordsøen og udskibning af
                 fremtidens brændstoffer i Thyborøn
-              </p>
-            </li>
-
-            <li className="flex items-start justify-start gap-4">
-              <Image
-                src={Godkendt}
-                alt="Godkendt Icon"
-                width={24}
-                height={24}
-              />
-              <p className="font-light text-featured text-lg">
-                Fremtidens kompetencer til Power-to-X: Håndværkere, leverandører
+              "
+            />
+            <FeaturedItem
+              src={Godkendt}
+              alt="Godkendt Icon"
+              text="
+              Fremtidens kompetencer til Power-to-X: Håndværkere, leverandører
                 til vindindustrien og kemisk virksomhed, kompetencer fra kemisk
                 virksomhed, mv.
-              </p>
-            </li>
+              "
+            />
           </ul>
         </div>
       </div>
@@ -119,3 +104,12 @@ const Featured = () => {
 };
 
 export default Featured;
+
+const FeaturedItem = ({ src, alt, text }) => {
+  return (
+    <li className="flex items-start justify-start gap-4">
+      <Image src={src} alt={alt} width={24} height={24} />
+      <p className="font-light text-featured text-lg">{text}</p>
+    </li>
+  );
+};

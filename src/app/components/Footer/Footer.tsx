@@ -46,20 +46,20 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-center pt-18 w-full">
           <ul className="flex items-center justify-between text-white w-full">
-            <li className="">
+            <li className="w-1/3">
               <p className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300">
                 © 2023 Klog Energi - Alle rettigheder forbeholdt.
               </p>
             </li>
-            <li className="">
+            <li className="w-1/3 text-center">
               <Link
                 href="#"
-                className="font-light text-xs pr-40 text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300"
+                className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300"
               >
                 Cookiepolitik
               </Link>
             </li>
-            <li>
+            <li className="w-1/3 text-right">
               <Link
                 href="#"
                 className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300"
