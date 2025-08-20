@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const Debate = () => {
   return (
-    <section className="bg-debate mx-4 rounded-2xl" id="debate">
-      <div className="py-[120px] mx-auto px-50 max-w-5x1">
+    <section className="bg-debate mx-4 rounded-2xl" id="debate w-sm lg:w-0">
+      <div className="xl:py-[7.5rem] py-[3.7rem] px-4 xl:mx-auto xl:px-50 xl:max-w-5x1">
         <div className="flex flex-col items-center justify-center">
-          <div className="mb-10">
-            <h2 className="font-semibold text-6xl text-debaten pb-[42px]">
+          <div className="mb-4 lg:mb-10">
+            <h2 className="font-semibold text-3xl w-3xs lg:w-auto lg:text-6xl text-debaten xl:pb-[4.2rem]">
               Program for debatten
             </h2>
             <ul
-              className="flex flex-col justify-center items-center gap-5 w-lg max-[804px]:w-full min-w-[590px] mb-6 after:content-[''] 
+              className="flex flex-col justify-center items-center gap-5 w-[320px] xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 
                after:block 
                after:w-[590px] 
                after:h-[1px] 
@@ -27,7 +27,7 @@ const Debate = () => {
               />
             </ul>
 
-            <ul className="flex flex-col items-start">
+            <ul className="flex flex-col items-center lg:items-start">
               <DebateItem
                 src="/debaten/Rectangle-10.png"
                 name="Keynote speaker"
@@ -54,10 +54,10 @@ const Debate = () => {
 export default Debate;
 
 const DebateItem = ({ src, name, title }) => (
-  <li className="flex items-center gap-4 mb-6">
+  <li className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-4 lg:mb-6 mb-4 last:mb-0">
     <Image src={src} alt="" width={80} height={80} />
     <div className="">
-      <h4 className="font-semibold text-debaten text-xl">{title}</h4>
+      <h4 className="font-semibold text-debaten text-lg lg:text-xl">{title}</h4>
       <p className="font-light text-debaten text-lg">{name}</p>
     </div>
   </li>
@@ -66,6 +66,6 @@ const DebateItem = ({ src, name, title }) => (
 const DebateContent = ({ subtitle, text }) => (
   <li>
     <span className="font-semibold text-xs text-debaten">{subtitle}</span>
-    <p className="font-semibold text-xl text-debaten">{text}</p>
+    <p className="font-semibold text-lg lg:text-xl text-debaten">{text}</p>
   </li>
 );
