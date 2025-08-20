@@ -4,44 +4,44 @@ import Image from "next/image";
 import Holstebro from "../../../../public/footer-assets/Holstebro.png";
 import Lemving from "../../../../public/footer-assets/Lemving.png";
 import Struer from "../../../../public/footer-assets/Struer.png";
+
 const Footer = () => {
   return (
     <footer className="bg-footer-body pt-18 pb-4 px-[140px]">
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-centers justify-between w-full">
-          <ul className="flex flex-col justify-between">
-            <li>
-              <Image src={Struer} alt="struer" width={400} height={60} />
-            </li>
-            <li className="self-start pt-8">
-              <p className="font-medium text-lg text-footer">Struer Kommune</p>
-              <p className="font-light text-lg text-footer">Østergade 13-15</p>
-              <p className="font-light text-lg text-footer">7600 Struer</p>
-            </li>
+          <ul className="flex flex-col items-center justify-between">
+            <FooterItem
+              src={Struer}
+              alt="Struer"
+              textClassName={"self-start text-left pt-8"}
+              title="Struer Kommune"
+              street="Østergade 13-15"
+              city="7600 Struer"
+              imageClassName={"w-[400px] h-[60px] mt-4"}
+            />
+          </ul>
+          <ul className="flex flex-col items-start">
+            <FooterItem
+              src={Holstebro}
+              alt="Holstebro"
+              textClassName={"self-center text-center pt-8"}
+              title="Holstebro Kommune"
+              street="Kirkestræde 11-15"
+              city="7500 Holstebro"
+              imageClassName={"w-[274px] h-[100px]"}
+            />
           </ul>
           <ul className="flex flex-col items-start justify-between">
-            <li className="">
-              <Image src={Holstebro} alt="Holstebro" width={274} height={100} />
-            </li>
-            <li className="self-center text-center pt-8">
-              <p className="font-medium text-lg text-footer">
-                Holstebro Kommune
-              </p>
-              <p className="font-light text-lg text-footer">
-                Kirkestræde 11-15
-              </p>
-              <p className="font-light text-lg text-footer">7500 Holstebro</p>
-            </li>
-          </ul>
-          <ul className="flex flex-col items-start justify-between">
-            <li>
-              <Image src={Lemving} alt="Lemving" width={400} height={60} />
-            </li>
-            <li className="self-end text-end pt-8">
-              <p className="font-medium text-lg text-footer">Lemvig Kommune</p>
-              <p className="font-light text-lg text-footer">Rådhusgade 2</p>
-              <p className="font-light text-lg text-footer">7620 Lemvig</p>
-            </li>
+            <FooterItem
+              src={Lemving}
+              alt="Lemving"
+              title="Lemvig Kommune"
+              street="Rådhusgade 2"
+              city="7620 Lemvig"
+              imageClassName={"w-[400px] h-[60px] mt-4"}
+              textClassName={"self-end text-end pt-8"}
+            />
           </ul>
         </div>
         <div className="flex items-center justify-center pt-18 w-full">
@@ -77,3 +77,28 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const FooterItem = ({
+  src,
+  alt,
+  title,
+  street,
+  city,
+  imageClassName,
+  textClassName,
+}) => {
+  return (
+    <>
+      <li className="flex flex-col items-end justify-between h-full">
+        <div className="">
+          <Image src={src} alt={alt} className={imageClassName} />
+        </div>
+        <div className={textClassName}>
+          <p className="font-medium text-lg text-footer">{title}</p>
+          <p className="font-light text-lg text-footer">{street}</p>
+          <p className="font-light text-lg text-footer">{city}</p>
+        </div>
+      </li>
+    </>
+  );
+};
