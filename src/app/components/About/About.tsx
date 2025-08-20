@@ -2,19 +2,22 @@ import React, { Children } from "react";
 
 export const About = () => {
   return (
-    <section className="py-[120px] mx-auto px-50 max-w-5x1" id="about">
-      <div className="grid grid-cols-2 gap-10">
-        <div className="flex flex-col items-end justify-start">
+    <section
+      className="py-[60px] lg:py-[120px] lg:mx-auto px-20 lg:px-50 lg:max-w-5x1"
+      id="about"
+    >
+      <div className="grid grid-col-2 gap-4 lg:grid-cols-2 lg:gap-10">
+        <div className="flex flex-col justify-center lg:items-end lg:justify-start">
           <div className="pb-4">
-            <h2 className="font-semibold text-6xl text-primary text-right w-md">
+            <h2 className="font-semibold text-4xl lg:text-6xl text-primary text-left lg:text-right">
               Debatten om Klog Energi
             </h2>
           </div>
-          <span className="font-semibold text-xl text-primary text-right">
+          <span className="font-semibold text-lg lg:text-xl text-primary text-left lg:text-right">
             20. januar 2024
           </span>
         </div>
-        <div className="flex flex-col items-center gap-4 w-lg">
+        <div className="flex flex-col items-center gap-4 w-sm lg:w-lg">
           <AboutItem>
             Debatten om Klog Energi er en betydningsfuld energikonference på
             Christiansborg. Her får politiske beslutningstagere inden for grøn
@@ -50,6 +53,8 @@ export const About = () => {
 
 const AboutItem = ({ children }) => {
   return (
-    <p className="font-light text-lg text-primary leading-normal">{children}</p>
+    <p className="font-light text-base2 lg:text-lg text-primary leading-normal">
+      {children}
+    </p>
   );
 };
