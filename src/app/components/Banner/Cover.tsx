@@ -8,7 +8,7 @@ type Props = {
 
 const BannerCover = ({ preloadImage }: Props) => {
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full overflow-hidden hidden lg:block">
       {/* <div className="relative z-10 max-w-5xl mx-auto px-4 py-[120px]"></div> */}
       <div className="relative w-full h-[980px] py-30">
         <div className="absolute pr-4 pl-30">

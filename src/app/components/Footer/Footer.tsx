@@ -7,21 +7,21 @@ import Struer from "../../../../public/footer-assets/Struer.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-body pt-18 pb-4 px-[140px]">
+    <footer className="bg-footer-body pt-18 pb-4 md:px-20 px-4 xl:px-[8.74rem]">
       <div className="flex flex-col items-center justify-center">
-        <div className="flex items-centers justify-between w-full">
+        <div className="flex items-centers justify-between w-full flex-col md:flex-row">
           <ul className="flex flex-col items-center justify-between">
             <FooterItem
               src={Struer}
               alt="Struer"
-              textClassName={"self-start text-left pt-8"}
+              textClassName={"self-center md:self-start text-left pt-8"}
               title="Struer Kommune"
               street="Østergade 13-15"
               city="7600 Struer"
               imageClassName={"w-[400px] h-[60px] mt-4"}
             />
           </ul>
-          <ul className="flex flex-col items-start">
+          <ul className="flex flex-col md:items-start items-center">
             <FooterItem
               src={Holstebro}
               alt="Holstebro"
@@ -32,7 +32,7 @@ const Footer = () => {
               imageClassName={"w-[274px] h-[100px]"}
             />
           </ul>
-          <ul className="flex flex-col items-start justify-between">
+          <ul className="flex flex-col md:items-start justify-between items-center">
             <FooterItem
               src={Lemving}
               alt="Lemving"
@@ -40,12 +40,12 @@ const Footer = () => {
               street="Rådhusgade 2"
               city="7620 Lemvig"
               imageClassName={"w-[400px] h-[60px] mt-4"}
-              textClassName={"self-end text-end pt-8"}
+              textClassName={"md:self-end self-center text-end pt-8"}
             />
           </ul>
         </div>
         <div className="flex items-center justify-center pt-18 w-full">
-          <ul className="flex items-center justify-between text-white w-full">
+          <ul className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between text-white w-full">
             <li className="w-1/3">
               <p className="font-light text-xs text-footer cursor-pointer hover:text-hover-footer transition-colors duration-300">
                 © 2023 Klog Energi - Alle rettigheder forbeholdt.

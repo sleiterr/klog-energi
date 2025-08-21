@@ -3,12 +3,12 @@ import React from "react";
 const EnergyInfo = () => {
   return (
     <section id="Energi">
-      <div className="py-[120px] mx-auto px-50 max-w-5x1">
-        <h2 className="font-semibold text-6xl text-primary leading-[90px]">
+      <div className="px-4 py-[120px] mx-auto md:px-50 max-w-5x1">
+        <h2 className="font-semibold text-4xl md:text-6xl text-primary md:leading-[1.2]">
           Klog Energi er grøn omstilling på nordvestjysk
         </h2>
-        <div className="grid grid-cols-[2fr_580px] items-start gap-4">
-          <ul className="flex flex-col items-start gap-4">
+        <div className="md:grid md:grid-cols-[2fr_580px] gap-4">
+          <ul className="space-y-4">
             <EnergyInfoItem>
               Det nordvestjyske samarbejde Klog Energi består af Lemvig, Struer
               og Holstebro Kommune og er en af forudsætningerne for, at ikke
@@ -29,7 +29,7 @@ const EnergyInfo = () => {
               kommer bedst i mål med Klog Energi.
             </EnergyInfoItem>
           </ul>
-          <ul className="flex flex-col items-start justify-start gap-4">
+          <ul className="space-y-4">
             <EnergyInfoItem>
               For intet er umuligt i mulighedernes Nordvestjylland. Klog Energi
               er vedvarende og grøn. Det er erfaring i at arbejde sammen med

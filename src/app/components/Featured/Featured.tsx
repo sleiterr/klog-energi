@@ -16,12 +16,12 @@ import {
 const Featured = () => {
   return (
     <section className="bg-debate mx-4 rounded-2xl" id="featured">
-      <div className="py-[120px] mx-auto px-50 max-w-5x1">
-        <h2 className="font-semibold text-6xl text-debaten pb-[42px]">
+      <div className="py-[7rem] mx-auto px-4 lg:px-50 max-w-5x1 min-w-sm">
+        <h2 className="font-semibold text-4xl lg:text-6xl text-debaten pb-8 lg:pb-[2.6rem]">
           I Nordvestjylland har vi
         </h2>
-        <div className="grid grid-cols-[530px_2fr] gap-4">
-          <ul className="flex flex-col items-start justify-start gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-[33rem_2fr] gap-6 lg:gap-4">
+          <ul className="space-y-4">
             <FeaturedItem
               src={Lokation}
               alt="Lokation Icon"
@@ -56,7 +56,7 @@ const Featured = () => {
             />
           </ul>
 
-          <ul className="flex flex-col itemsstart justify-start gap-4 w-132">
+          <ul className="space-y-4 w-full lg:w-132">
             <FeaturedItem
               src={Liste}
               alt="Liste Icon"
@@ -108,7 +108,7 @@ export default Featured;
 const FeaturedItem = ({ src, alt, text }) => {
   return (
     <li className="flex items-start justify-start gap-4">
-      <Image src={src} alt={alt} width={24} height={24} />
+      <Image src={src} alt={alt} className="lg:size-6 size-8" />
       <p className="font-light text-featured text-lg">{text}</p>
     </li>
   );
