@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Debate = () => {
   return (
-    <section className="bg-debate mx-4 rounded-2xl w-sm lg:w-0" id="debate">
+    <section className="bg-debate mx-4 rounded-2xl w-sm lg:w-full" id="debate">
       <div className="xl:py-[7.5rem] py-[3.7rem] px-4 xl:mx-auto xl:px-50 xl:max-w-5x1">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-4 lg:mb-10">
