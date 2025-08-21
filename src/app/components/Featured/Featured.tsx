@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const Featured = () => {
   return (
-    <section className="bg-debate mx-4 rounded-2xl w-sm" id="featured">
+    <section
+      className="bg-debate mx-4 rounded-2xl w-sm md:w-auto"
+      id="featured"
+    >
       <div className="py-[7rem] mx-auto px-4 lg:px-50 md:max-w-5x1">
         <h2 className="font-semibold text-4xl lg:text-6xl text-debaten pb-8 lg:pb-[2.6rem]">
           I Nordvestjylland har vi
