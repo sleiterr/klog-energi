@@ -9,7 +9,7 @@ const Hero = () => {
         <Image
           src={heroBg}
           alt="Klog Energi"
-          className="rounded-lg clip-path-left"
+          className="rounded-lg clip-path-left h-screen"
           style={{ objectFit: "cover" }}
           width={1160}
           height={700}
@@ -21,7 +21,7 @@ const Hero = () => {
           alt="Hero animation"
           width={800}
           height={300}
-          className="absolute top-1/2 left-2/3 -translate-x-1/2 -translate-y-1/2 w-full h-40"
+          className="absolute top-1/2 left-2/3 object-contain md:object-cover -translate-x-1/2 -translate-y-1/2 w-full h-40"
           priority
         />
       </div>
