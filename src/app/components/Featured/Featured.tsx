@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Featured = () => {
   return (
-    <section className="bg-debate mx-4 rounded-2xl" id="featured">
-      <div className="py-[7rem] mx-auto px-4 lg:px-50 max-w-5x1 min-w-sm">
+    <section className="bg-debate mx-4 rounded-2xl w-sm" id="featured">
+      <div className="py-[7rem] mx-auto px-4 lg:px-50 md:max-w-5x1">
         <h2 className="font-semibold text-4xl lg:text-6xl text-debaten pb-8 lg:pb-[2.6rem]">
           I Nordvestjylland har vi
         </h2>
@@ -16,12 +16,12 @@ const Featured = () => {
               text="Arealer til sol, vind, Power-to-X og ilandføringer fra Nordsøen"
             />
             <FeaturedItem
-              src="/icons/Tool.svg"
+              src="/icons/Værktøj.svg"
               alt="Tool Icon"
               text="Servicehavne til vindparker i Nordsøen, Thorsminde og Thyborøn"
             />
             <FeaturedItem
-              src="/icons/Værktøj.svg"
+              src="/icons/Vind.svg"
               alt="Vind Icon"
               text="
               Nærhed til grøn strøm fra Nordsøen
