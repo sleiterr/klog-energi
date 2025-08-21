@@ -3,7 +3,7 @@ import React from "react";
 const EnergyInfo = () => {
   return (
     <section id="Energi">
-      <div className="px-4 py-[120px] mx-auto md:px-50 max-w-5x1">
+      <div className="container px-4 py-[120px] mx-auto md:px-50 max-w-5x1">
         <h2 className="font-semibold text-4xl md:text-6xl text-primary md:leading-[1.2]">
           Klog Energi er grøn omstilling på nordvestjysk
         </h2>
