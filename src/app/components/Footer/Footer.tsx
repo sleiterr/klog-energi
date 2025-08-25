@@ -21,7 +21,7 @@ const Footer = () => {
               imageClassName={"w-[400px] h-[60px] mt-4"}
             />
           </ul>
-          <ul className="flex flex-col md:items-start items-center">
+          <ul className="flex flex-col md:items-start items-center mt-4 md:mt-0">
             <FooterItem
               src={Holstebro}
               alt="Holstebro"
