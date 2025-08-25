@@ -4,8 +4,8 @@ import Image from "next/image";
 const Debate = () => {
   return (
     <section
-      className="bg-debate mx-4 rounded-2xl"
-      id="debate w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
+      className="bg-debate mx-4 rounded-2xl debate max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
+      id="debate"
     >
       <div className="xl:py-[7.5rem] py-[3.7rem] px-4 xl:mx-auto xl:px-50 xl:max-w-5x1">
         <div className="flex flex-col items-center justify-center">
