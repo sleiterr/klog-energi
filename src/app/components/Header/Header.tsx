@@ -65,13 +65,15 @@ const Header = () => {
     console.log("scrolled change ->", scrolled);
   }, [scrolled]);
 
-  const defaultClasses = "flex justify-center items-center h-[60px]";
+  const defaultClasses =
+    "flex justify-center items-center h-[30px] md:h-[60px] w-full";
 
   const navBarClasses = clsx(
-    "w-full top-0 right-1/2 translate-x-1/2 absolute z-10 transition-all duration-300 ease-in-out",
+    "py-2 z-10 transition-all duration-300 ease-in-out ",
+    "absolute md:right-1/2 md:translate-x-1/2 w-full",
     !scrolled &&
-      "top-[20px] md:top-[40px] after:content-[''] after:w-[600px] after:h-[1px] after:inline-block after:align-middle after:bg-[#E4EADC] after:absolute after:left-1/2 after:-translate-x-1/2 bg-transparent",
-    scrolled && "fixed bg-[#72C183] shadow-md w-full z-10 py-2"
+      "top-[10px] md:top-[40px]  after:content-[''] after:w-[600px] after:h-[1px] after:align-middle after:bg-[#E4EADC] after:absolute after:left-1/2 after:-translate-x-1/2 md:bg-transparent after:hidden md:after:block",
+    scrolled && "fixed bg-[#72C183] shadow-md z-10 w-full py-4"
   );
 
   return (
@@ -90,17 +92,17 @@ const Header = () => {
         <nav
           className={clsx(
             defaultClasses,
-            "lg:hidden flex flex-col items-start gap-6"
+            "lg:hidden flex flex-col items-start gap-6 w-full"
           )}
         ></nav>
       </header>
-      <div className="fixed z-50 right-[30px] top-[25px] md:hidden">
-        <BurgerMenu
-          scrolled={scrolled}
-          isOpen={menuOpen}
-          toggleMenu={() => setMenuOpen((prev) => !prev)}
-        />
-      </div>
+        <div className="fixed z-[1200] right-[30px] top-[10px] md:hidden">
+          <BurgerMenu
+            scrolled={scrolled}
+            isOpen={menuOpen}
+            toggleMenu={() => setMenuOpen((prev) => !prev)}
+          />
+        </div>
       {menuOpen && (
         <div
           className={clsx(
