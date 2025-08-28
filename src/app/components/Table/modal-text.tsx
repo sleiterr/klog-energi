@@ -29,21 +29,35 @@ export default function TbProjectModal({
   console.log("Modal render:", project, show);
   return (
     <Modal show={!!show} onClose={onClose}>
-      <div>
-        <div className="">
-          <button
-            onClick={onClose}
-            className="absolute top-2 right-2 text-lg font-bold"
+      <div className="relative">
+        <button
+          onClick={onClose}
+          className="absolute -top-[1rem] right-0 translate-x-1/2 text-lg font-bold cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="text-white w-9 h-9 hover:text-gray-300 transition-colors duration-300"
           >
-            X
-          </button>
-        </div>
-        <div className="">
-          <h2>{project.projekt}</h2>
-          <p>Location: {project.lokation}</p>
-          <p>Type: {project.type ? "Vindenergi" : "Energitype"}</p>
-          <p>Aktører: {project.aktorer.join(", ")}</p>
-          <p>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div className="flex flex-col gap-2 py-12">
+          <h2 className="text-white">{project.projekt}</h2>
+          <p className="text-white">Location: {project.lokation}</p>
+          <p className="text-white">
+            Type: {project.type ? "Vindenergi" : "Energitype"}
+          </p>
+          <p className="text-white">Aktører: {project.aktorer.join(", ")}</p>
+          <p className="flex items items-center gap-2 text-white">
             Status:
             <StatusLabel status={project.status}>
               {labelByStatus[project.status]}

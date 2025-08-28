@@ -96,13 +96,13 @@ const Header = () => {
           )}
         ></nav>
       </header>
-        <div className="fixed z-[1200] right-[30px] top-[10px] md:hidden">
-          <BurgerMenu
-            scrolled={scrolled}
-            isOpen={menuOpen}
-            toggleMenu={() => setMenuOpen((prev) => !prev)}
-          />
-        </div>
+      <div className="fixed z-[1200] right-[30px] top-[10px] md:hidden">
+        <BurgerMenu
+          scrolled={scrolled}
+          isOpen={menuOpen}
+          toggleMenu={() => setMenuOpen((prev) => !prev)}
+        />
+      </div>
       {menuOpen && (
         <div
           className={clsx(
@@ -119,31 +119,31 @@ const Header = () => {
           )}
           onClick={() => setMenuOpen(false)}
         >
-          <ul className="list-none">
+          <ul className="flex flex-col gap-2 list-none">
             <HeaderItem
               to="about"
-              className="text-zinc-700"
+              className="text-primary"
               onClick={() => setMenuOpen(false)}
             >
               Om Debatten
             </HeaderItem>
             <HeaderItem
               to="debate"
-              className="text-zinc-700"
+              className="text-primary"
               onClick={() => setMenuOpen(false)}
             >
               Program
             </HeaderItem>
             <HeaderItem
               to="featured"
-              className="text-zinc-700"
+              className="text-primary"
               onClick={() => setMenuOpen(false)}
             >
               Vores tilbud
             </HeaderItem>
             <HeaderItem
               to="Energi"
-              className="text-zinc-700"
+              className="text-primary"
               onClick={() => setMenuOpen(false)}
             >
               Den grønne omstilling
