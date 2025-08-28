@@ -10,7 +10,7 @@ const Debate = () => {
       <div className="xl:py-[7.5rem] py-[3.7rem] px-4 xl:mx-auto xl:px-50 xl:max-w-5x1">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-4 lg:mb-10">
-            <h2 className="font-semibold text-3xl w-3xs lg:w-auto lg:text-6xl text-debaten xl:pb-[4.2rem]">
+            <h2 className="font-semibold text-3xl w-3xs lg:w-auto lg:text-6xl text-debaten xl:pb-[4.2rem] px-4 md:px-0">
               Program for debatten
             </h2>
             <ul
@@ -67,7 +67,7 @@ const DebateItem = ({ src, name, title }) => (
 );
 
 const DebateContent = ({ subtitle, text }) => (
-  <li>
+  <li className="px-4 md:px-0">
     <span className="font-semibold text-xs text-debaten">{subtitle}</span>
     <p className="font-semibold text-lg lg:text-xl text-debaten">{text}</p>
   </li>
