@@ -41,7 +41,7 @@ export default function TbProjectModal({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             stroke-linecap="round"
             stroke-linejoin="round"
             className="text-white w-9 h-9 hover:text-gray-300 transition-colors duration-300"
@@ -59,9 +59,7 @@ export default function TbProjectModal({
           <p className="text-white">Aktører: {project.aktorer.join(", ")}</p>
           <p className="flex items items-center gap-2 text-white">
             Status:
-            <StatusLabel status={project.status}>
-              {labelByStatus[project.status]}
-            </StatusLabel>
+            <StatusLabel status={project.status} />
           </p>
         </div>
       </div>
