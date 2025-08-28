@@ -73,7 +73,7 @@ export default function ProjectRow({
           ))}
         </td>
         <td className=" border-b-1 border-[#E4EADC]">
-          <StatusLabel status={status}>{labelByStatus[status]}</StatusLabel>
+          <StatusLabel status={status} />
         </td>
       </tr>
     </>

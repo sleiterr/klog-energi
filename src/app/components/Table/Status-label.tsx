@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { Status } from "../../utils/statusLabels";
+import { labelByStatus, Status } from "../../utils/statusLabels";
 
 // export enum Status {
 //   Active = "I drift",
@@ -9,17 +9,17 @@ import { Status } from "../../utils/statusLabels";
 // }
 
 export interface StatusLabelProps {
-  children: React.ReactNode;
+  withText?: boolean;
   status: Status;
   disabled?: boolean;
   className?: string;
 }
 
 export default function StatusLabel({
-  children,
   status,
   disabled = false,
   className = "",
+  withText = true,
 }) {
   return (
     <div className={clsx("flex items-center gap-4 justify-start", className)}>
@@ -36,9 +36,11 @@ export default function StatusLabel({
       >
         <span className="w-1 h-1 rounded-full bg-current" />
       </div>
-      <p className="font-light text-lg text-primary text-left m-0 group-hover:text-hover">
-        {children}
-      </p>
+      {withText && (
+        <p className="font-light text-lg text-primary text-left m-0 group-hover:text-hover">
+          {labelByStatus[status]}
+        </p>
+      )}
     </div>
   );
 }

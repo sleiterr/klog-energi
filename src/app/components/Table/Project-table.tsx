@@ -11,7 +11,7 @@ export default function ProjectTable({ children }: CompanyTableProps) {
   return (
     <section className="py-[60px] px-4 lg:py-[120px] lg:mx-auto lg:px-50 lg:max-w-5x1">
       <div className="">
-        <table className="table-auto w-full border-separate border-spacing-y-0 ">
+        <table className="table-auto md:w-full border-separate border-spacing-y-0 ">
           <thead>
             <tr className="">
               {headers.map((header, i) => (
