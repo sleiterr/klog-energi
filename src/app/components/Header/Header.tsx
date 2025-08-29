@@ -66,15 +66,15 @@ const Header = () => {
   }, [scrolled]);
 
   const defaultClasses =
-    "flex justify-center items-center h-[30px] md:h-[60px] w-full";
+    "flex justify-center items-center w-full min:w-xs max-w-full md:w-full h-[30px] md:h-[60px]";
 
   const navBarClasses = clsx(
-    "py-2 z-10 transition-all duration-300 ease-in-out ",
+    "md:py-2 z-10 transition-all duration-300 ease-in-out ",
     "absolute md:right-1/2 md:translate-x-1/2",
     !scrolled &&
       "top-[10px] md:top-[40px]  after:content-[''] after:w-[600px] after:h-[1px] after:align-middle after:bg-[#E4EADC] after:absolute after:left-1/2 after:-translate-x-1/2 md:bg-transparent after:hidden md:after:block",
     scrolled &&
-      "fixed bg-[#72C183] shadow-md z-10 py-1 w-full min-w-md md:min-w-7xl"
+      "fixed bg-[#72C183] shadow-md z-10 p-2 md:py-1 w-full md:min-w-full md:max-w-7xl"
   );
 
   return (

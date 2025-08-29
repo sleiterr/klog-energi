@@ -14,9 +14,9 @@ const Debate = () => {
               Program for debatten
             </h2>
             <ul
-              className="flex flex-col justify-center items-center gap-5 w-sm xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 
+              className="flex flex-col justify-center items-center gap-5 w- xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 
                after:block 
-               after:w-[590px] 
+               after:w-[100%] 
                after:h-[1px] 
                after:bg-[#1D3F33]"
             >
@@ -58,7 +58,7 @@ export default Debate;
 
 const DebateItem = ({ src, name, title }) => (
   <li className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-4 lg:mb-6 mb-4 last:mb-0">
-    <Image src={src} alt="" width={80} height={80} />
+    <Image src={src} alt="" width={80} height={80} className="rounded-full" />
     <div className="">
       <h4 className="font-semibold text-debaten text-lg lg:text-xl">{title}</h4>
       <p className="font-light text-debaten text-lg">{name}</p>
