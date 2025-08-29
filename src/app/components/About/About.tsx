@@ -3,11 +3,11 @@ import React, { Children } from "react";
 export const About = () => {
   return (
     <section className="" id="about">
-      <div className="py-[60px] px-4 lg:py-[120px] lg:mx-auto lg:px-50 lg:max-w-5x1">
-        <div className="grid grid-col-2 gap-4 lg:grid-cols-2 lg:gap-10">
+      <div className="py-[60px] px-4 md:py-[120px] md:mx-auto md:px-4 md:max-w-7xl">
+        <div className="grid grid-col-2 gap-4 md:grid-cols-2 lg:gap-10">
           <div className="flex flex-col justify-center lg:items-end lg:justify-start">
             <div className="pb-4">
-              <h2 className="font-semibold text-4xl lg:text-6xl text-primary text-left lg:text-right">
+              <h2 className="font-semibold text-4xl md:text-6xl text-primary text-left md:text-right md:w-[30rem] leading-[1.2]">
                 Debatten om Klog Energi
               </h2>
             </div>

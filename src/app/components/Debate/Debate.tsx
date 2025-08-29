@@ -4,17 +4,17 @@ import Image from "next/image";
 const Debate = () => {
   return (
     <section
-      className="bg-debate mx-4 rounded-2xl debate max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
+      className="bg-debate mx-4 rounded-2xl debate min-w-xs max-w-md sm:max-w-sm md:max-w-md lg:max-w-full"
       id="debate"
     >
-      <div className="xl:py-[7.5rem] py-[3.7rem] px-4 xl:mx-auto xl:px-50 xl:max-w-5x1">
+      <div className="md:py-[7.5rem] py-[3.7rem] px-4 md:mx-auto md:px-50 xl:max-w-7xl">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-4 lg:mb-10">
             <h2 className="font-semibold text-3xl w-3xs lg:w-auto lg:text-6xl text-debaten xl:pb-[4.2rem] px-4 md:px-0">
               Program for debatten
             </h2>
             <ul
-              className="flex flex-col justify-center items-center gap-5 w-[320px] xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 
+              className="flex flex-col justify-center items-center gap-5 w-sm xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 
                after:block 
                after:w-[590px] 
                after:h-[1px] 

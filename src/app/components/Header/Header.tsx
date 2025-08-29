@@ -70,17 +70,18 @@ const Header = () => {
 
   const navBarClasses = clsx(
     "py-2 z-10 transition-all duration-300 ease-in-out ",
-    "absolute md:right-1/2 md:translate-x-1/2 w-full",
+    "absolute md:right-1/2 md:translate-x-1/2",
     !scrolled &&
       "top-[10px] md:top-[40px]  after:content-[''] after:w-[600px] after:h-[1px] after:align-middle after:bg-[#E4EADC] after:absolute after:left-1/2 after:-translate-x-1/2 md:bg-transparent after:hidden md:after:block",
-    scrolled && "fixed bg-[#72C183] shadow-md z-10 w-full py-4"
+    scrolled &&
+      "fixed bg-[#72C183] shadow-md z-10 py-1 w-full min-w-md md:min-w-7xl"
   );
 
   return (
     <>
       <header className={navBarClasses}>
         {/* Desktop Navigation */}
-        <nav className={clsx(defaultClasses, "hidden lg:flex justify-center")}>
+        <nav className={clsx(defaultClasses, "hidden md:flex justify-center")}>
           <ul className="flex gap-8 list-none">
             <HeaderItem to="about">Om Debatten</HeaderItem>
             <HeaderItem to="debate">Program</HeaderItem>

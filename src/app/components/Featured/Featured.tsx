@@ -7,7 +7,7 @@ const Featured = () => {
       className="bg-debate mx-4 rounded-2xl w-sm md:w-auto"
       id="featured"
     >
-      <div className="py-[7rem] mx-auto px-4 lg:px-50 md:max-w-5x1">
+      <div className="py-[7rem] mx-auto px-4 lg:px-4 md:max-w-7xl">
         <h2 className="font-semibold text-4xl lg:text-6xl text-debaten pb-8 lg:pb-[2.6rem]">
           I Nordvestjylland har vi
         </h2>

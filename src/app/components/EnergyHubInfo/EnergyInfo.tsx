@@ -3,11 +3,11 @@ import React from "react";
 const EnergyInfo = () => {
   return (
     <section id="Energi">
-      <div className="container px-4 py-[120px] mx-auto md:px-50 max-w-5x1">
-        <h2 className="font-semibold text-4xl md:text-6xl text-primary md:leading-[1.2]">
+      <div className="px-4 py-[120px] mx-auto md:px-0 max-w-7xl">
+        <h2 className="font-semibold text-4xl md:text-6xl text-primary md:leading-[1.2] mb-4">
           Klog Energi er grøn omstilling på nordvestjysk
         </h2>
-        <div className="md:grid md:grid-cols-[2fr_580px] gap-4">
+        <div className="md:grid md:grid-cols-2 gap-4">
           <ul className="space-y-4">
             <EnergyInfoItem>
               Det nordvestjyske samarbejde Klog Energi består af Lemvig, Struer

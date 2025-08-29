@@ -9,8 +9,8 @@ const headers = ["Projekt", "Lokation", "Type", "Aktører", "Status"];
 
 export default function ProjectTable({ children }: CompanyTableProps) {
   return (
-    <section className="py-[60px] px-4 lg:py-[120px] lg:mx-auto lg:px-50 lg:max-w-5x1">
-      <div className="">
+    <section className="">
+      <div className="md:py-[120px] md:mx-auto md:px-4 lg:max-w-7xl">
         <table className="table-auto md:w-full border-separate border-spacing-y-0 ">
           <thead>
             <tr className="">

@@ -19,7 +19,7 @@ interface MobCardProps {
 
 export default function MobCard({ project }: MobCardProps) {
   return (
-    <div className="bg-card shadow-md rounded-2xl p-4 mb-4">
+    <div className="bg-card shadow-md rounded-2xl p-4 mb-4 min-w-xs max-w-md w-full">
       {/* Project Title and Status */}
       <div className="flex items-center justify-between w-full mb-2">
         <span className="font-normal text-xs text-text-card text-left">
