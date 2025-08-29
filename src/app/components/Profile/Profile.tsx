@@ -6,7 +6,10 @@ import Layer from "/public/icons/Layer_1.png";
 const Profile = () => {
   return (
     <section>
-      <div className="py-30 px-4 mx-auto flex items-center justify-center gap-4 ">
+      <div
+        className="flex items-center justify-center
+       mx-auto py-[60px] md:mx-4 md:py-[120px] md:px-0 md:max-w-7xl "
+      >
         <ProfileItem
           src={BrianImage}
           icon={Layer}
@@ -33,7 +36,7 @@ const ProfileItem = ({ src, icon, name, subtitle, text, quote }) => {
       <Image
         src={src}
         alt="Profile"
-        className="rounded-2xl clip-path-left object-cover w-[520px] h-[300px] lg:w-[58.5rem] lg:h-[50rem]"
+        className="rounded-2xl px-4 md:px-0 clip-path-left object-cover w-[520px] h-[300px] md:w-[58.5rem] md:h-[50rem]"
       />
       <div className="relative flex flex-col items-start">
         <Image

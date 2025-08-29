@@ -30,11 +30,13 @@ export default function OpenModal({ projects }) {
       </div>
 
       {/* Mobile View */}
-      <div className="block px-4 md:hidden md:px-0">
-        {projects.map((p) => (
-          <MobilList key={p.id} project={p} />
-        ))}
-      </div>
+      <section className="block md:hidden md:px-0">
+        <div className="py-[60px] px-4 mx-auto max-w-5xl">
+          {projects.map((p) => (
+            <MobilList key={p.id} project={p} />
+          ))}
+        </div>
+      </section>
 
       {/* Modal View */}
       {selectedProject && (
@@ -50,3 +52,5 @@ export default function OpenModal({ projects }) {
     </>
   );
 }
+
+
