@@ -4,7 +4,7 @@ import Image from "next/image";
 const Featured = () => {
   return (
     <section
-      className="bg-debate mx-4 rounded-2xl w-sm md:w-auto"
+      className="bg-debate mx-auto md:mx-4 rounded-2xl w-sm md:w-auto"
       id="featured"
     >
       <div className="py-[7rem] mx-auto px-4 lg:px-4 md:max-w-7xl">
