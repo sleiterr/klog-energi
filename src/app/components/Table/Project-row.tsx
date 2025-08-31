@@ -3,6 +3,7 @@ import React from "react";
 import clsx from "clsx";
 import { Status, labelByStatus } from "../../utils/statusLabels";
 import StatusLabel from "./Status-label";
+import { motion } from "motion/react";
 
 export interface ProjectRowProps {
   id: number;
@@ -31,7 +32,7 @@ export default function ProjectRow({
 }: ProjectRowProps) {
   return (
     <>
-      <tr
+      <motion.tr
         id=""
         // onClick={onClick}
         onClick={() => {
@@ -75,7 +76,7 @@ export default function ProjectRow({
         <td className=" border-b-1 border-[#E4EADC]">
           <StatusLabel status={status} />
         </td>
-      </tr>
+      </motion.tr>
     </>
   );
 }

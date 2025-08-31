@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import BlurText from "../animation/BlurText";
 
 const Featured = () => {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
+
   return (
     <section
       className="bg-debate mx-auto md:mx-4 rounded-2xl w-sm md:w-auto"
@@ -9,7 +16,15 @@ const Featured = () => {
     >
       <div className="py-[7rem] mx-auto px-4 lg:px-4 md:max-w-7xl">
         <h2 className="font-semibold text-4xl lg:text-6xl text-debaten pb-8 lg:pb-[2.6rem]">
-          I Nordvestjylland har vi
+          <BlurText
+            text=" I Nordvestjylland har vi"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            animationFrom={undefined}
+            animationTo={undefined}
+            onAnimationComplete={handleAnimationComplete}
+          />
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-[33rem_2fr] gap-6 lg:gap-4">
           <ul className="space-y-4">

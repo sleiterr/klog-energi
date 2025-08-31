@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import BlurText from "../animation/BlurText";
 import BrianImage from "/public/images/Brian-Vad.png"; // Adjust the path as necessary
 import Layer from "/public/icons/Layer_1.png";
 
@@ -31,6 +33,9 @@ const Profile = () => {
 export default Profile;
 
 const ProfileItem = ({ src, icon, name, subtitle, text, quote }) => {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
   return (
     <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-4">
       <Image
@@ -44,9 +49,17 @@ const ProfileItem = ({ src, icon, name, subtitle, text, quote }) => {
           alt="icon"
           className="absolute translate-x-1/2 -top-10 right-15 hidden lg:block"
         />
-        <div className="flex flex-col items-start gap-4 pt-4 lg:pt-0 lg:gap-0 mb-2 lg:mb-0 px-0 lg:px-0 w-[24rem] lg:w-[33rem]">
+        <div className="flex flex-col items-start gap-4 pt-4 md:pt-0 md:gap-0 mb-4 md:mb-4 px-0 md:px-0 w-[24rem] md:w-[33rem]">
           <h2 className="font-semibold text-4xl lg:text-6xl text-primary xl:leading-[90px]">
-            {name}
+            <BlurText
+              text={name}
+              delay={150}
+              animateBy="words"
+              direction="top"
+              animationFrom={undefined}
+              animationTo={undefined}
+              onAnimationComplete={handleAnimationComplete}
+            />
           </h2>
           <p className="font-semibold text-primary text-xs">{subtitle}</p>
         </div>
