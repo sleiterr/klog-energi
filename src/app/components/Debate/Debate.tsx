@@ -1,7 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import BlurText from "../animation/BlurText";
 
 const Debate = () => {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
   return (
     <section
       className="bg-debate mx-4 rounded-2xl debate min-w-xs max-w-md sm:max-w-sm md:max-w-md lg:max-w-full"
@@ -11,7 +16,15 @@ const Debate = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-4 lg:mb-10">
             <h2 className="font-semibold text-3xl w-3xs lg:w-auto lg:text-6xl text-debaten xl:pb-[4.2rem] px-4 md:px-0">
-              Program for debatten
+              <BlurText
+                text=" Program for debatten"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                animationFrom={undefined}
+                animationTo={undefined}
+                onAnimationComplete={handleAnimationComplete}
+              />
             </h2>
             <ul
               className="flex flex-col justify-center items-center gap-5 w- xl:w-lg xl:max-[804px]:w-full xl:min-w-[590px] mb-6 after:content-[''] 

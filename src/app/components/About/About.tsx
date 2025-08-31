@@ -1,18 +1,48 @@
-import React, { Children } from "react";
+"use client";
+import React from "react";
+import BlurText from "../animation/BlurText";
+import clsx from "clsx";
 
 export const About = () => {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
+
   return (
     <section className="" id="about">
       <div className="py-[60px] px-4 md:py-[120px] md:mx-auto md:px-4 md:max-w-7xl">
         <div className="grid grid-col-2 gap-4 md:grid-cols-2 lg:gap-10">
-          <div className="flex flex-col justify-center lg:items-end lg:justify-start">
-            <div className="pb-4">
-              <h2 className="font-semibold text-4xl md:text-6xl text-primary text-left md:text-right md:w-[30rem] leading-[1.2]">
-                Debatten om Klog Energi
+          <div className="flex flex-col justify-center md:items-end md:justify-start">
+            <div className="">
+              <h2
+                className={clsx(
+                  "font-semibold text-4xl md:text-6xl text-primary text-left md:text-right md:w-[30rem] leading-[1.2] pb-4"
+                )}
+              >
+                <BlurText
+                  text="Debatten om Klog Energi"
+                  delay={150}
+                  animateBy="words"
+                  direction="top"
+                  animationFrom={undefined}
+                  animationTo={undefined}
+                  onAnimationComplete={handleAnimationComplete}
+                />
               </h2>
+              {/* <h2 className="font-semibold text-4xl md:text-6xl text-primary text-left md:text-right md:w-[30rem] leading-[1.2]">
+                Debatten om Klog Energi
+              </h2> */}
             </div>
             <span className="font-semibold text-lg lg:text-xl text-primary text-left lg:text-right">
-              20. januar 2024
+              <BlurText
+                text="20. januar 2024"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                animationFrom={undefined}
+                animationTo={undefined}
+                onAnimationComplete={handleAnimationComplete}
+              />
             </span>
           </div>
           <div className="flex flex-col items-center gap-4 w-sm lg:w-lg">

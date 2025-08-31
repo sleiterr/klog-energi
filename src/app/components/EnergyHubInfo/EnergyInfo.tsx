@@ -1,11 +1,26 @@
+"use client";
+
 import React from "react";
+import BlurText from "../animation/BlurText";
 
 const EnergyInfo = () => {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
+
   return (
     <section id="Energi">
       <div className="px-4 py-[120px] mx-auto md:px-0 max-w-7xl">
         <h2 className="font-semibold text-4xl md:text-6xl text-primary md:leading-[1.2] mb-4">
-          Klog Energi er grøn omstilling på nordvestjysk
+          <BlurText
+            text="Klog Energi er grøn omstilling på nordvestjysk"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            animationFrom={undefined}
+            animationTo={undefined}
+            onAnimationComplete={handleAnimationComplete}
+          />
         </h2>
         <div className="md:grid md:grid-cols-2 gap-4">
           <ul className="space-y-4">
